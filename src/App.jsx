@@ -31,9 +31,10 @@ function App() {
 						<input ref={inputRef} type="text" name="item-name" id="item-name" placeholder="Enter item.." />
 						<div className="buttons">
 							<button onClick={handleAddTodo}>Add</button>
-							<button onClick={handleRemoveTodo}>Remove</button>
+							<button className="btn-delete" onClick={handleRemoveTodo}>Remove</button>
 					</div>
 					</div>
+					<h2>Items:</h2>
 					<ul>
 						{todos.map((item) =>
 						{
